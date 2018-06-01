@@ -1,0 +1,110 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2018-06-01, 09:48:37
+    Author     : Michał
+*/
+
+@font-face {
+    font-family: 'calligraffitiregular';
+    src: url('font/calligraffiti-webfont.woff2') format('woff2'),
+        url('font/calligraffiti-webfont.woff') format('woff'),
+        url('font/calligraffiti.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'amatic';
+    src: url('font/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    background-color: greenyellow;
+    padding-top: 54px;
+    font-family: Georgia, serif;
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.breadcrumb{
+
+    background-color: yellowgreen;
+}
+
+
+.carousel-item {
+
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+abbr[title] {
+    border-bottom: none !important;
+    cursor: inherit !important;
+    text-decoration: none !important;
+}
+
+.btn {
+    background-color: green;
+}
+
+.jumbotron {
+    background-color: yellowgreen;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;    
+}
+
+abbr 
+img {
+    height: 30px;
+    width: 30px;
+}
+
+abbr[title] 
+#phone {
+    float: left;
+    margin-right: 5px; 
+}
+
+nav {
+    font-size: 4vh;
+    font-family: amatic;
+}
+
+nav .navbar-brand {
+    font-size: 4vh;
+}
+
+h1 {
+    font-size: 8vh;
+    font-family: amatic, serif;
+}
+
+h2 {
+    font-size: 6vh;
+    font-family: amatic, serif;
+}
