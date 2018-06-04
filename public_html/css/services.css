@@ -1,0 +1,53 @@
+/*
+    Created on : 2018-06-01, 09:48:37
+    Author     : Michał
+*/
+
+
+/* Modal (background) */
+.modal {
+    display: none; /* Domyślnie ukryty */
+    position: fixed; /* W jednym miejscu */
+    z-index: 1; /* Ponad innymi */
+    padding-top: 100px; /* Lokacja okna*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* włącz scrollowanie jeżeli trzeba */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal zawartość */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Przycisk zamknięcia modalu */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-family: 'calligraffitiregular', serif;
+}
+
+h1 {
+    font-size: 8vh;
+    font-family: amatic, serif;
+}

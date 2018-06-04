@@ -1,15 +1,14 @@
-// Get the modal
 var modal;
 
-// Get the button that opens the modal
+// Przyciski otwierające modal
 var btnThies = document.getElementById("myBtnThiessen");
 var btnSmoky = document.getElementById("myBtnSmoky");
 var btnVine = document.getElementById("myBtnVine");
 
-// Get the <span> element that closes the modal
+// Weź <span> który zamyka modal
 var span = document.getElementsByClassName("text-right close");
 
-// When the user clicks the button, open the modal 
+// Kiedy użytkownik kliknie przycisk otwórz modal
 btnThies.onclick = function() {
     modal = document.getElementById('myModalThies');
     modal.style.display = "block";
@@ -30,12 +29,12 @@ btnVine.onclick = function() {
 for (i = 0, len = span.length; i < len; i++){
     span[i].onclick = spanClick;
 }
-// When the user clicks on <span> (x), close the modal
+// Kiedy użytkownik kliknie <span> (x), zamknij modal
 function spanClick() {
     modal.style.display = "none";
 };
 
-// When the user clicks anywhere outside of the modal, close it
+// Kiedy użytkownik kliknie poza modalem, zamknij modal
 window.onclick = function(event) {
     if (event.target === modal) {
         modal.style.display = "none";

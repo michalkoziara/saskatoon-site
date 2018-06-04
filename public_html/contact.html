@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,133 +12,159 @@
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Custom styles for this template -->
+    <!-- Moje pliki CSS -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="css/contact.css" rel="stylesheet">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <!-- Navigation -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success fixed-top">
-      <div class="container">
+<!-- Nawigacja -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-success fixed-top">
+    <div class="container">
         <a class="navbar-brand" href="index.html">Szkółka</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="services.html">Oferta</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Kontakt</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Oferta</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Page Content -->
-    <div class="container">
+<!-- Zawartość strony -->
+<div class="container">
 
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">Kontakt
+    <!-- Nagłówek -->
+    <h1 class="mt-4 mb-3">Kontakt
         <small>znajdź Nas!</small>
-      </h1>
+    </h1>
 
-      <ol class="breadcrumb">
+    <ol class="breadcrumb">
         <li class="breadcrumb-item">
-          <a href="index.html">Strona główna</a>
+            <a href="index.html">Strona główna</a>
         </li>
         <li class="breadcrumb-item active">Kontakt</li>
-      </ol>
+    </ol>
 
-      <!-- Content Row -->
-      <div class="row">
-        <!-- Map Column -->
+    <!-- Kolumna zawartości strony -->
+    <div class="row">
+        <!-- Kolumna mapy -->
         <div class="col-lg-8 mb-4">
-          <!-- Embedded Google Map -->
-          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?ll=51.779799,23.0645686&amp;z=14&amp;output=embed"></iframe>
+            <!-- Wbudowana Google Map -->
+            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    src="https://maps.google.com/maps?ll=51.779799,23.0645686&amp;z=14&amp;output=embed"></iframe>
         </div>
-        <!-- Contact Details Column -->
+        <!-- Kolumna danych kontaktowych -->
         <div class="col-lg-4 mb-4">
-          <h3>Dane kontaktowe</h3>
-          <br>
-           <abbr title="Adres"><img id="phone" src="img/home-sign.png" alt="adres">
-           </abbr><p><abbr title="Adres">Polubicze Wiejskie Drugie 18 <br> 21-580 Wisznice</abbr></p>
-          <p>
-              <abbr title="Telefon"><img src="img/phone-sign.png" alt="telefon"> 798807676</abbr> 
-          </p>
-          <p>
-              <abbr title="Email"><img src="img/email-sign.png" alt="email">
-            <a href="mailto:pawel.matczuk@o2.pl">pawel.matczuk@o2.pl</a></abbr>
-          </p>
+            <h3>Dane kontaktowe</h3>
+            <br>
+            <abbr title="Adres"><img class="phone-icon" src="img/home-sign.png" alt="adres">
+            </abbr>
+            <p><abbr title="Adres">Polubicze Wiejskie Drugie 18 <br> 21-580 Wisznice</abbr></p>
+            <p>
+                <abbr title="Telefon"><img src="img/phone-sign.png" alt="telefon"> 798807676</abbr>
+            </p>
+            <p>
+                <abbr title="Email"><img src="img/email-sign.png" alt="email">
+                    <a href="mailto:pawel.matczuk@o2.pl">pawel.matczuk@o2.pl</a></abbr>
+            </p>
         </div>
-      </div>
-      <!-- /.row -->
+    </div>
+    <!-- /.row -->
 
-      <!-- Contact Form -->
-      <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <div class="row">
+    <!-- Formularz kontaktowy -->
+    <div class="row">
         <div class="col-lg-8 mb-4">
-          <h3>Wyślij nam wiadomość</h3>
-          <form name="sentMessage" id="contactForm" novalidate>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Imie i nazwisko:</label>
-                <input type="text" class="form-control" id="name" required data-validation-required-message="Wpisz swoje imię.">
-                <p class="help-block"></p>
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Numer telefonu:</label>
-                <input type="tel" class="form-control" id="phone" required data-validation-required-message="Wpisz swój numer telefonu.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Adres email:</label>
-                <input type="email" class="form-control" id="email" required data-validation-required-message="Wpisz swój adres email.">
-              </div>
-            </div>
-            <div class="control-group form-group">
-              <div class="controls">
-                <label>Wiadomość:</label>
-                <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Wpisz swoją wiadomość" maxlength="999" style="resize:none"></textarea>
-              </div>
-            </div>
-            <div id="success"></div>
-            <!-- For success/fail messages -->
-            <button type="submit" class="btn btn-primary" id="sendMessageButton">Wyślij wiadomość</button>
-          </form>
-        </div>
+            <h3>Wyślij nam wiadomość</h3>
+            <form onsubmit="return sprawdz()" action="https://formspree.io/mkoziara12@gmail.com" method="POST"
+                  name="sentMessage" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Imie i nazwisko:</label>
+                    <div class="input-group">
+                        <!-- Ikony Font Awesome-->
+                        <span class="input-group-addon fa fa-user-o"></span>
+                        <input class="form-control" name="imie-nazwisko" id="name"
+                               placeholder="Jan Kowalski" required>
+                    </div>
+                    <div class="invalid-data">
+                        Wprowadź poprawne dane!
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <label for="phone">Numer telefonu:</label>
+                    <div class="input-group">
+                        <!-- Ikony Font Awesome-->
+                        <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                        <input type="tel" class="form-control" name="telefon" id="phone" placeholder="123456789" required>
+                    </div>
+                    <div class="invalid-data">
+                        Wprowadź poprawne dane!
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <label for="email">Adres email:</label>
+                    <div class="input-group">
+                        <!-- Ikony Font Awesome-->
+                        <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+                        <input type="email" class="form-control" name="email" id="email"
+                               placeholder="przykładowy@email.com" required>
+                    </div>
+                    <div class="invalid-data">
+                        Wprowadź poprawne dane!
+                    </div>
+                </div>
+                <div class="control-group form-group">
+                    <div class="controls">
+                        <label>Wiadomość:</label>
+                        <textarea rows="10" cols="100" class="form-control" name="wiadomosc" required maxlength="999"
+                                  placeholder="Treść"
+                                  style="resize:none"></textarea>
+                    </div>
+                </div>
 
-      </div>
-      <!-- /.row -->
+                <input type="submit" class="btn btn-primary" id="sendMessageButton" value="Wyślij wiadomość">
+
+                <!-- formspree.io ustawienia -->
+                <input type="hidden" name="_language" value="pl"/>
+                <input type="hidden" name="_next" value="./contact.html"/>
+                <input type="hidden" name="_subject" value="Nowa wiadomość!"/>
+            </form>
+        </div>
 
     </div>
-    <!-- /.container -->
+    <!-- /.row -->
 
-    <!-- Footer -->
-    <footer class="py-5 bg-success">
-      <div class="container">
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-success">
+    <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; Szkółka 2018</p>
-      </div>
-      <!-- /.container -->
-    </footer>
+    </div>
+    <!-- /.container -->
+</footer>
 
- <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
-    <!-- Contact form JavaScript -->
-    <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+<!-- Formularz kontaktowy JavaScript -->
+<script src="js/contact.js"></script>
 
-  </body>
+</body>
 
 </html>

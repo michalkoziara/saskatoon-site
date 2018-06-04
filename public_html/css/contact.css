@@ -1,0 +1,51 @@
+/*
+    Created on : 2018-06-01, 09:48:37
+    Author     : Michał
+*/
+
+
+/* Ikony danych kontaktowych */
+abbr
+img {
+    height: 30px;
+    width: 30px;
+}
+
+/* Ikony danych kontaktowych - ikona telefonu */
+abbr[title]
+.phone-icon {
+    float: left;
+    margin-right: 5px;
+}
+
+/* Ikony danych formularza */
+.fa {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    color: darkgreen;
+    font-size: 22px;
+    z-index: 10;
+}
+
+/* Przesuniecie pól formularza dla ikon */
+.input-group
+.form-control {
+    position: relative;
+    padding-left: 45px !important;
+    border-radius: 10px !important;
+}
+
+input .btn{
+
+}
+
+form {
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.invalid-data {
+    text-align: center;
+    color: darkred;
+}
