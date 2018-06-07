@@ -44,6 +44,17 @@
     </div>
 </nav>
 
+
+
+<div class="loader"></div>
+
+
+<!-- Google api -->
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDtoVshd9etQ2PmviHiWkYeNYjKPqG6BJo"></script>
+<!-- Geolokalizacja -->
+<script src="js/geolokalizacja.js"></script>
+
+
 <!-- Zawartość strony -->
 <div class="container">
 
@@ -64,8 +75,7 @@
         <!-- Kolumna mapy -->
         <div class="col-lg-8 mb-4">
             <!-- Wbudowana Google Map -->
-            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?ll=51.779799,23.0645686&amp;z=14&amp;output=embed"></iframe>
+            <iframe src="https://maps.google.com/maps?ll=51.779799,23.0645686&amp;z=14&amp;output=embed"></iframe>
         </div>
         <!-- Kolumna danych kontaktowych -->
         <div class="col-lg-4 mb-4">
@@ -81,6 +91,7 @@
                 <abbr title="Email"><img src="img/email-sign.png" alt="email">
                     <a href="mailto:pawel.matczuk@o2.pl">pawel.matczuk@o2.pl</a></abbr>
             </p>
+            <p id="geo">Jesteśmy tuż obok!</p>
         </div>
     </div>
     <!-- /.row -->
@@ -89,30 +100,26 @@
     <div class="row">
         <div class="col-lg-8 mb-4">
             <h3>Wyślij nam wiadomość</h3>
-            <form onsubmit="return sprawdz()" action="https://formspree.io/mkoziara12@gmail.com" method="POST"
+            <form onsubmit="return sprawdz();" action="https://formspree.io/mkoziara12@gmail.com" method="POST"
                   name="sentMessage" id="contactForm">
-                <div class="form-group">
+                <div class="control-group form-group">
                     <label for="name">Imie i nazwisko:</label>
                     <div class="input-group">
                         <!-- Ikony Font Awesome-->
                         <span class="input-group-addon fa fa-user-o"></span>
-                        <input class="form-control" name="imie-nazwisko" id="name"
-                               placeholder="Jan Kowalski" required>
+                        <input class="form-control" name="imie-nazwisko" id="name" type="text"
+                               placeholder="Jan Kowalski">
                     </div>
-                    <div class="invalid-data">
-                        Wprowadź poprawne dane!
-                    </div>
+                    <div class="invalid-data"></div>
                 </div>
                 <div class="control-group form-group">
                     <label for="phone">Numer telefonu:</label>
                     <div class="input-group">
                         <!-- Ikony Font Awesome-->
                         <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                        <input type="tel" class="form-control" name="telefon" id="phone" placeholder="123456789" required>
+                        <input type="tel" class="form-control" name="telefon" id="phone" placeholder="123456789">
                     </div>
-                    <div class="invalid-data">
-                        Wprowadź poprawne dane!
-                    </div>
+                    <div class="invalid-data"></div>
                 </div>
                 <div class="control-group form-group">
                     <label for="email">Adres email:</label>
@@ -120,26 +127,23 @@
                         <!-- Ikony Font Awesome-->
                         <span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
                         <input type="email" class="form-control" name="email" id="email"
-                               placeholder="przykładowy@email.com" required>
+                               placeholder="przykładowy@email.com">
                     </div>
-                    <div class="invalid-data">
-                        Wprowadź poprawne dane!
-                    </div>
+                    <div class="invalid-data"></div>
                 </div>
                 <div class="control-group form-group">
                     <div class="controls">
                         <label>Wiadomość:</label>
-                        <textarea rows="10" cols="100" class="form-control" name="wiadomosc" required maxlength="999"
-                                  placeholder="Treść"
-                                  style="resize:none"></textarea>
+                        <textarea rows="10" cols="100" class="form-control" name="wiadomosc" maxlength="999"
+                                  placeholder="Treść"></textarea>
                     </div>
                 </div>
 
-                <input type="submit" class="btn btn-primary" id="sendMessageButton" value="Wyślij wiadomość">
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Wyślij wiadomość</button>
 
                 <!-- formspree.io ustawienia -->
                 <input type="hidden" name="_language" value="pl"/>
-                <input type="hidden" name="_next" value="./contact.html"/>
+                <input type="hidden" name="_next" value="../contact.html"/>
                 <input type="hidden" name="_subject" value="Nowa wiadomość!"/>
             </form>
         </div>
@@ -159,11 +163,12 @@
 </footer>
 
 <!-- Bootstrap core JavaScript -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
 <!-- Formularz kontaktowy JavaScript -->
 <script src="js/contact.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 
